@@ -59,6 +59,19 @@
     margin: 7px 0 0; font-size: 11.5px; letter-spacing: .16em; color: var(--fg-dim);
   }
 
+  /* 进游戏入口 */
+  .play {
+    display: inline-flex; align-items: center; gap: 9px;
+    margin-top: 16px; padding: 9px 17px 9px 15px;
+    font-size: 12.5px; letter-spacing: .14em; color: #f0d9ab;
+    border: 1px solid rgba(200,160,90,.5); border-radius: 8px;
+    background: rgba(200,160,90,.1); text-decoration: none;
+    transition: background .2s ease, border-color .2s ease, transform .1s ease;
+  }
+  .play:hover { background: rgba(200,160,90,.24); border-color: rgba(200,160,90,.85); }
+  .play:active { transform: scale(.985); }
+  .play i { font-style: normal; font-size: 9px; color: var(--accent); }
+
   .spec {
     top: 0; right: 0; padding: 28px 30px; text-align: right;
     font-size: 11px; letter-spacing: .1em; color: var(--fg-dim); line-height: 1.9;
@@ -147,6 +160,9 @@
 <div class="hud title">
   <h1>虎式 I 型 <span>131</span></h1>
   <p>三色迷彩 · 1943</p>
+  <a class="play" href="https://gangliu8.github.io/tiger-131-game/" target="_blank" rel="noopener">
+    <i>▶</i>开坦克打靶
+  </a>
 </div>
 
 <div class="hud spec">
